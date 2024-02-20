@@ -23,19 +23,19 @@ const Register = () => {
 
   const mutation=useMutation(apiClient.register,{
     onSuccess:async ()=>{
-        console.log('Registration successful!');
+        //console.log('Registration successful!');
         showToast({message:"Registration successful!",type:"SUCCESS"});
         await queryClient.invalidateQueries("validateToken");
         navigate("/");
     },
     onError:(error:Error)=>{
-        console.log(error.message);
+        //console.log(error.message);
         showToast({message:error.message,type:"ERROR"});
     }
   });  
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+    //console.log(data);
     mutation.mutate(data);
   });
   return (

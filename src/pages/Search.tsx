@@ -33,8 +33,8 @@ const Search = () => {
   const { data: hotelData } = useQuery(["searchHotel", searchParams], () =>
     apiClient.searchHotel(searchParams)
   );
-  console.log(search);
-  console.log("data from search hotel", hotelData);
+  //console.log(search);
+  //console.log("data from search hotel", hotelData);
 
  const handleStarsChange=(event:React.ChangeEvent<HTMLInputElement>)=>{
  const starRating=event.target.value;
