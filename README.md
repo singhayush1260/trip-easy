@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Trip Easy - Travel Hotel Booking Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Trip Easy, your ultimate destination for hassle-free hotel bookings! Trip Easy is a comprehensive travel hotel booking web application built to simplify the process of finding, booking, and managing hotel accommodations. This application is developed using React, TypeScript, Tailwind CSS for the frontend, and Node.js with Express and MongoDB for the backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Hotels**: Explore a diverse range of hotels with detailed information including location, amenities, and pricing.
+- **Search Functionality**: Utilize the search bar to find hotels based on destination, check-in/out dates, and other preferences.
+- **Booking Management**: Manage your hotel reservations seamlessly, including the ability to modify or cancel bookings.
+- **Add Hotels**: Admin users can contribute to the platform by adding new hotels, providing essential details for guests.
+- **Payment Integration**: Securely process payments for bookings through Stripe integration.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Frontend
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Adds static typing to JavaScript for improved development experience.
+- **Tailwind CSS**: Utility-first CSS framework for efficient styling.
+- **Context API**: React's built-in state management solution.
+- **React Hook Form**: Library for handling form state and validation in React.
+- **React Query**: Library for managing and caching asynchronous data in React applications.
+- **Stripe**: Payment gateway for secure payment processing.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Backend
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Node.js**: JavaScript runtime for server-side development.
+- **Express**: Web application framework for Node.js.
+- **MongoDB**: NoSQL database for storing hotel and user data.
+
+Backend Repo: (https://github.com/singhayush1260/trip-easy-server)
+
